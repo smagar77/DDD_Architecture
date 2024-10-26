@@ -30,21 +30,23 @@ cd services/auth-service/ && pipenv install
 rename .env_sample to .env
 set SQLALCHEMY_URI absolute path
 pipenv shell
+pipenv install
 export PYTHONPATH=.
 alembic upgrade heads
 python auth_service &
 ```
 
 ```
-to access auth service please visit - http://localhost:8080 or http://127.0.0.1:8080
-to access API documentation please visit http://localhost:8080/docs or http://127.0.0.1:8080/docs
+to access auth service please visit - http://localhost:7074 or http://127.0.0.1:7074
+to access API documentation please visit http://localhost:7074/docs or http://127.0.0.1:7074/docs
 ```
 
 # Setup weather service
 ```
 rename .env_sample to .env
-cd services/weather-service/ && pipenv install
+cd services/weather-service/
 pipenv shell
+pipenv install
 alembic upgrade heads
 python weather_service &
 ```
@@ -53,8 +55,8 @@ to access weather service visit - http://127.0.0.1:7074/docs
 ```
 
 ```
-to access weather service please visit - http://localhost:8081 or http://127.0.0.1:8081
-to access API documentation please visit http://localhost:8081/docs or http://127.0.0.1:8081/docs
+to access weather service please visit - http://localhost:7075 or http://127.0.0.1:7075
+to access API documentation please visit http://localhost:7075/docs or http://127.0.0.1:7075/docs
 ```
 
 
