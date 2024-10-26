@@ -1,0 +1,39 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+fastapi = "*"
+databases = "*"
+psycopg2-binary = "*"
+uvicorn = "*"
+pydantic = "*"
+python-multipart = "*"
+python-dotenv = "*"
+typing-extensions = "*"
+cryptography = "*"
+python-jose = "*"
+bcrypt = "*"
+passlib = "*"
+aioboto3 = "*"
+Inject = "*"
+python-dateutil = "*"
+redis = "*"
+alembic = "*"
+
+
+[dev-packages]
+black = "*"
+flake8 = "*"
+pytest = "*"
+pydocstyle = "*"
+tox = "*"
+pytest-black = "*"
+pytest-clarity = "*"
+pytest-dotenv = "*"
+pytest-flake8 = "*"
+
+
+[requires]
+python_version = "3.9"
